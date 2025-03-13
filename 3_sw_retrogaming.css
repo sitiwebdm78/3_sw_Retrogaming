@@ -1,0 +1,209 @@
+/* SITO WEB - SELWORKING 3 RETROGAMING */
+
+/* DICHIARAZIONI DELLE VARIABILI DEL SITO */
+
+    :root{
+        --wht:rgb(255, 255, 255);
+        --ylw: rgb(251, 233, 0);
+        --blu: rgb(27, 21, 64);
+        --gray:rgb(32, 32, 32);
+    }
+
+/* CLASSI COLORI BACKGROUND CON VARIABILE */
+    .bg_blu{
+        background-color: var(--blu);
+    }
+
+    .bg_ylw{
+        background-color: var(--ylw);
+    }
+
+    .bg_gray{
+        background-color: var(--gray);
+    }
+
+
+
+/* CLASSI COLORE TESTO CON VARIABILE  */
+    .text_wht{
+        color: var(--wht);
+    }
+
+    .text_ylw{
+        color: var(--ylw);
+    }
+
+/* STILE UNIVERSALE DELLE PAGINE WEB */
+
+    *{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    h1, h2, h3, .h1, .h2, .h3{
+        font-family: "Montserrat", sans-serif;  
+    }
+    
+    h1{
+        font-weight: 600;
+        font-size: 60px;
+    }
+
+    p{
+        color: var(--wht);
+    }
+
+ /* STILE PERSONALIZZATO DELLE PAGINE  */
+
+    .bg_head_img{
+        background-image: url(./mediarecording/bg-1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bg_img_form{
+        background-image: url(./mediarecording/bg-2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+/* PRIMA SEZIONE - TESTATA */
+
+    .calendar p{
+        font-size: 0.9rem;
+    }
+
+    /* STILE BOTTONE */
+    .iscr_grat_1{
+        color: var(--ylw);
+        text-decoration: none;
+        border: 2px solid var(--ylw);
+        border-radius: 20px;
+    }
+
+ /* SECONDA SEZIONE - ARTICOLO */
+
+ /* TERZA SEZIONE - FORM */
+
+    .bg_form{
+        background-image: url(/mediarecording/bg-2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .form-container {
+        background-color: #15002e; /* Colore del contenitore */
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .form-container h1 {
+        color: var(--wht);
+        font-size: 1.5rem;
+        margin-bottom: 20px;   
+    }
+    
+    .event-info {
+        margin-bottom: 20px;
+    }
+
+    .event-info i{
+        background-color: var(--ylw);
+        border-radius: 50%;
+        padding: 30px 20px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .event-info h2 {
+        color: var(--wht);
+        margin: 10px 0 5px;
+        padding-left: 15px;
+        font-size: 1.2rem;
+    }
+
+    .event-info p {
+        padding-top: 3px;
+        font-size: 0.9rem;
+        color:var(--wht);
+        width: 100%;
+    }
+
+    .btn-submit {
+        background-color: #ffc107; /* Colore del bottone */
+        color: black;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-submit:hover {
+        background-color: #ffc107;
+        color: var(--wht); /* Colore hover bottone */
+    }
+    
+    .form-check-label{
+        color: var(--wht);
+    }
+
+    .form-check-label a {
+        color: var(--ylw) /* Colore del link */
+    }
+
+    .form-check-label a:hover {
+        color: var(--wht);
+        text-decoration: underline;
+    }
+
+/* QUARTA SEZIONE - CHI E' AULAB */
+
+    .img_logo_futuro{
+      width: 400px;
+      height: 380px;  
+    }
+
+/* QUINTA SEZIONE - PRESENTAZIONE DOCENTI */
+
+    .bg_speacker{
+        background-image: url(/mediarecording/bg-3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+/* SEZIONE MEDIA QUERY */
+
+    @media screen and (max-width:1024px) {
+        .customquery_1 h1 {
+            font-size: 30px;
+        }
+        .customquery_2{
+            display: flex;
+            align-items: center;
+        }
+        
+        .customquery_3 img {
+            width: 300px;
+            height: 250px;
+        }
+
+        .customquery_5 p{ 
+            font-size: 15px;
+        }
+
+        .customquery_7{
+            font-size: 9px;
+        }
+    }
+
+    @media screen and (min-width:1024px){
+        .customquery_5 p{ 
+            font-size: 25px;
+        }
+    }
+
+
+
